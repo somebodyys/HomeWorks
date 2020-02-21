@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border Style</title>
+
+        <style>
+
+            .general{
+                border-color: lightseagreen;
+                width: 460px;
+                height: fit-content;
+            }
+
+            .dotted{
+                border-style: dotted;
+            }
+            .dashed{
+                border-style: dashed;
+            }
+            .solid{
+                border-style: solid;
+            }
+            .double{
+                border-style: double;
+            }
+            .groove{
+                border-style: groove;
+            }
+            .ridge{
+                border-style: ridge;
+            }
+            .inset{
+                border-style: inset;
+            }
+            .outset{
+                border-style: outset;
+            }
+            .none{
+                border-style: none;
+            }   
+            .hidden{
+                border-style: hidden;
+            }
+            .mix{
+                border-top: dotted;
+                border-right: none;
+                border-bottom: solid;
+                border-left: double;
+                border-color: lightseagreen;
+            }
+
+            .curved{
+                border-radius: 20px;
+                width: 150px;
+                height: 90px;
+                border-style: solid;
+                padding: 10px;
+            }
+            
+            .curved1{
+                width: 270px;
+                height: 170px;
+                background-color: darkred;
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+
+        <div style="border: solid; width: 500px; height: 700px; border-width: 2px; padding: 20px;">
+            <h2>border-style თვისება</h2>
+            <p style="font-size: 0.8em;">მოცემული თვისება განსაზღვრავს, როგორ აისახება ჩარჩოს გვერდები:</p>
+            <div class="general dotted">dotted - წერტილოვანი ჩარჩო</div>
+            <br>
+            <div class="general dashed">dashed - წყვეტილი ჩარჩო</div>
+            <br>
+            <div class="solid general">solid - უწყვეტი ჩარჩო</div>
+            <br>
+            <div class="double general">double - ორმაგი ჩარჩო</div>
+            <br>
+            <div class="groove general">groove - ჩაღრმავებული ჩარჩო</div>
+            <br>
+            <div class="ridge general">ridge - ამობურცული ჩარჩო</div>
+            <br>
+            <div class="inset general">inset - ჩარჩოში ჩაღრმავებული</div>
+            <br>
+            <div class="outset general">outset - ჩარჩოში ამობურცული</div>
+            <br>
+            <div class="none">none - ჩარჩო არ არის</div>
+            <br>
+            <div class="hidden">hidden - დამალილი ჩარჩო</div>
+            <br>
+            <div class="general mix">mix - ჩარჩო შერეული საზღვრებით.</div>
+
+        </div>
+
+        <br>
+        <div style="border: solid; width: 500px; height: 700px; border-width: 2px; padding: 20px;">
+            <p>border-radius თვისება საშუალებას გაძლევთ ელემენტს მომრგვალებული კუთხეები დაამატოთ.</p>
+            <p>მომრგვალებული კუთხეები ფონის მქონდე ელემენტისთვის:</p>
+            <div class="curved" style="background-color: rgb(107, 10, 10);">მართკუთხედი მომრგვალებული კუთხეებით</div>
+            <br>
+            <p>მომრგვალებული კუთხეები ჩარჩოიანი ელემენტისათვის:</p>
+            <div class="curved">მართკუთხედი მომრგვალებული კუთხეებით</div>
+            <br>
+            <p>მომრგვალებული კუთხეები ფონურგამოსახულებიანი ელემენტისათვის:</p>
+            <div class="curved" style="background-image: url(sea.jpg); border-style: none;">მართკუთხედი მომრგვალებული კუთხეებით</div>
+
+        </div>
+
+        <br>
+        <div style="border: solid; width: 500px; height: 700px; border-width: 2px; padding: 20px;">
+            
+            <p>ოთხი მნიშვნელობა - border-radius: 15px 50px 30px 5px:</p>
+            <div class="curved1" style="border-radius: 15px 50px 30px 5px;color: darkred;"></div>
+            <p>სამი მნიშვნელობა - border-radius: 15px 50px 30px:</p>
+            <div class="curved1" style="border-radius: 15px 50px 30px;color: darkred;"></div>
+            <p>ორი მნიშვნელობა - borderradius: 15px 50px:</p>
+            <div class="curved1" style="border-radius: 15px 50px;"></div>
+        </div>
+        <br>
+        <div style="border: solid; width: 500px; height: 700px; border-width: 2px; padding: 20px;">
+           
+            <p>ელიფსური კუთხე - border-radius: 50px/15px:</p>
+            <div class="curved1" style="border-radius: 50px/15px;"></div>
+            <p>ელიფსური კუთხე - border-radius: 15px/50px:</p>
+            <div class="curved1" style="border-radius: 15px/50px;"></div>
+            <p>ელიფსური კუთხე - border-radius: 50%:</p>
+            <div class="curved1" style="border-radius: 50%;"></div>
+
+        </div>
+
+
+    </body>
+</html>
