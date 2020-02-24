@@ -1,0 +1,16 @@
+body{
+    
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: 50px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+div img{
+    margin-left: 50px;
+}

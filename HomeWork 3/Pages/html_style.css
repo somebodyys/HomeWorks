@@ -1,0 +1,15 @@
+body{
+    
+    background-image: url(../background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 0.8em;
+}
+
+img{
+    width: 250px;
+    height: 200px;
+
+}
